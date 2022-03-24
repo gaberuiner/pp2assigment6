@@ -1,1 +1,47 @@
 
+def fun(nnn):  
+    g = 1
+    for x in nnn:
+        g *= x  
+    return g
+
+
+nnn = list(map(int, input().split(" ")))
+print(fun(nnn))
+
+
+def calculator(text):
+    x = 0
+    y = 0
+    for element in text:
+        if element.isupper():
+           x = x+1
+        elif element.islower():
+           y = y + 1
+        else:
+           pass
+    print("number of uppercases ", x)
+    print("number of lowercases ", y)
+
+text = input()
+calculator(text)
+
+
+
+def palindrom(text):
+    rev = ''.join(reversed(text))
+    if(text == rev):
+        print("yes")
+    else:
+        print("No")
+
+text = input()
+palindrom(text)
+
+
+
+def ccheck(ttt):
+    return all(ttt)
+
+ttt = (True, True, True)
+print(ccheck(ttt))
