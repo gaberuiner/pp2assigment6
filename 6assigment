@@ -1,9 +1,7 @@
-
+import numpy
 def fun(nnn):  
-    g = 1
-    for x in nnn:
-        g *= x  
-    return g
+    
+    return numpy.prod(nnn)
 
 
 nnn = list(map(int, input().split(" ")))
